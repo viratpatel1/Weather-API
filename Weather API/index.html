@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="country.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Country Weather API</title>
+    </head>
+
+    <body>
+
+        <div class="Outer">
+            <ul class="Search">
+                <input type="text" placeholder="Search" id="myInput">
+                <button type="button" onclick="getInputValue();">Get Value</button>
+            </ul>
+            <ul>
+                <li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <h3>The Region Of this Country </h3><br>
+                                <h2 id="region">Aisa</h2>
+                                <hr>
+                            </div>
+                            <div class="col-sm">
+                                <h1>Country Flag</h1>
+                                <img src="https://restcountries.eu/data/ind.svg" alt="" id="image">
+                            </div>
+                            <div class="col-sm">
+                                <h3>The Capital of The Country</h3><br>
+                                <h1 id="capital">New Delhi</h1>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+    <script src="script.js"></script>
+
+</html>
